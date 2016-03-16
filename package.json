@@ -1,0 +1,28 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "PostCSS Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postcss"
+  ],
+  "author": "TinHa",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "css-mqpacker": "^4.0.0",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "lost": "^6.7.2",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^8.0.2",
+    "precss": "^1.4.0"
+  }
+}
