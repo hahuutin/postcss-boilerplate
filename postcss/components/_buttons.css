@@ -1,0 +1,10 @@
+/**
+ *
+ * This file contains all styles of the button component.
+ */
+
+button,
+.btn {
+  border: none;
+  background-color: transparent;
+}

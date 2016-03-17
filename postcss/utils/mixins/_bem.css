@@ -1,0 +1,19 @@
+/**
+ *
+ * Mixin for BEM - Elements
+ */
+@define-mixin element $selector {
+  &__$(selector) {
+    @mixin-content;
+  }
+}
+
+/**
+ *
+ * Mixin for BEM - Modifier
+ */
+@define-mixin modifier $selector {
+  &--$(selector) {
+    @mixin-content;
+  }
+}

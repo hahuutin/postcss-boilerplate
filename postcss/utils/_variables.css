@@ -1,0 +1,87 @@
+/**
+ *
+ * This file contains all application-wide Sass variables.
+ */
+
+/* Path */
+$base-url                         : ../assets;
+$image-url                        : ../images/front;
+$font-url                         : ../fonts;
+
+
+/* Width & Height */
+$max-width                        : 978px;
+
+/* Color */
+$white                            : #fff;
+$black                            : #000;
+$light-grey                       : #ededed;
+$mid-grey                         : #999;
+$dark-grey                        : #444;
+$dark-red                         : #cb4300;
+$green                            : #259c00;
+
+$brand-primary-color              : #281706;
+$brand-secondary-color            : #a18137;
+
+$text-color                       : #222;
+$title-color                      : $dark-red;
+
+$link-color                       : #dfad65;
+$link-hover-color                 : $black;
+
+$error-color                      : #f00;
+$warning-color                    : #d4230f;
+$success-color                    : $green;
+
+$border-color                     : $light-grey;
+
+/* Font */
+/* Font family */
+$font-family-primary              : "Avant-Garde", Arial, sans-serif;
+
+$font-family-secondary            : "OratorStd", Arial, sans-serif;
+$font-family-secondary-sub        : "Traveling-typewriter", Arial, sans-serif;
+
+$font-tertiary                    : "Miss Stanfort", Arial, sans-serif;
+$font-tertiary-sub                : "Helga", Arial, sans-serif;
+
+/* Font size */
+$font-size-headline               : 30px;
+$font-size-text                   : 12px;
+
+/* Font weight */
+$font-lighter                     : 300;
+$font-normal                      : 400;
+$font-semibold                    : 600;
+$font-bold                        : 700;
+
+/* Border-radius */
+$border-radius-base               : 4px;
+$border-radius-small              : 3px;
+$border-radius-large              : 6px;
+
+
+/* Animation */
+$base-animation-duration          : .5s;
+$fast-animation-duration          : .2s;
+$slow-animation-duration          : .7s;
+
+$timing-function-ease             : ease;
+$timing-function-ease-in-out      : ease-in-out;
+$timing-function-ease-in-out-quad : cubic-bezier(0.455, 0.030, 0.515, 0.955);
+$timing-function-ease-out-cubic   : cubic-bezier(0.215, 0.610, 0.355, 1.000);
+
+
+/* Z-index */
+$zindex-navbar                    : 1000;
+
+
+/* Breakpoint */
+$screen-md-max                    : 1199px;
+$screen-sm-max                    : 991px;
+$screen-xs-max                    : 767px;
+$screen-xs-middle                 : 600px;
+$screen-xs                        : 480px;
+
+/* Override variables from vendors */

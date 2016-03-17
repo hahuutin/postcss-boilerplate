@@ -1,0 +1,10 @@
+/**
+ *
+ * Global styling
+ */
+
+/* Background body */
+body {
+  overflow-y: scroll !important;
+  background: url("$(image-url)/bg.jpg") center center repeat;
+}

@@ -1,0 +1,9 @@
+/**
+ *
+ * This file contains CSS helper classes.
+ */
+
+/* Main content containers */
+.container {
+  @extend container;
+}

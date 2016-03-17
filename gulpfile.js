@@ -39,7 +39,7 @@ gulp.task('css', function () {
 // Task watch
 gulp.task('watch', function() {
   return gulp
-    .watch('postcss/*.css', ['css']);
+    .watch('postcss/**/*.css', ['css']);
 });
 
 // Run default

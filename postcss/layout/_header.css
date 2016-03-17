@@ -1,0 +1,16 @@
+/**
+ *
+ * Header
+ */
+
+$selector: .header;
+
+$(selector) {
+  position: relative;
+  z-index: 2;
+  background-color: $brand-primary-color;
+
+  @mixin element title {
+    height: 30px;
+  }
+}
