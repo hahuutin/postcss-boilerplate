@@ -1,7 +1,7 @@
 ### PostCSS Boilerplate
 ---
 
-A boilerplate for PostCSS project built with Gulp inspiration by [Sass boilerplate of Hugo](https://github.com/HugoGiraudel/sass-boilerplate)
+A boilerplate for PostCSS project built with Gulp inspiration by [Sass boilerplate of Hugo Giraudel](https://github.com/HugoGiraudel/sass-boilerplate)
 
 Boilerplate use some plugins below:
 
