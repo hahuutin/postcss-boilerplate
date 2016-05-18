@@ -1,37 +1,40 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
-// Fallback
 var autoprefixer = require('autoprefixer');
-// Future CSS Syntax
 var postcsscssnext = require('postcss-cssnext');
-// Sass
 var precss = require('precss');
-// Grid
 var lost = require('lost');
-// Optimization
 var postcssdiscardcomments = require('postcss-discard-comments');
 var cssmqpacker = require('css-mqpacker');
-// Production
 var cssnano = require('cssnano');
-// Dev
 var postcssimport = require('postcss-import');
+var rucksack = require('gulp-rucksack');
+var bem = require('postcss-bem');
 
 // Task PostCSS
 gulp.task('css', function () {
   var processor = [
     postcssimport,
-    // autoprefixer({ browsers: ['last 2 versions'] }),
+    autoprefixer({ browsers: ['last 2 versions'] }),
     postcssdiscardcomments,
-    postcsscssnext,
+    postcsscssnext({warnForDuplicates: false}),
     precss,
     lost,
-    cssmqpacker
+    cssmqpacker,
+	bem({
+		separators: {
+			namespace: '-',
+			descendent: '__',
+			modifier: '--'
+		}
+	})
   ];
   return gulp
     .src('postcss/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processor))
+	.pipe(rucksack())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('css'));
 });

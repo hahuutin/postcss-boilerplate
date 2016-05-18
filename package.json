@@ -18,11 +18,14 @@
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.1",
     "gulp-postcss": "^6.1.0",
+    "gulp-rucksack": "^0.1.3",
     "gulp-sourcemaps": "^1.6.0",
     "lost": "^6.7.2",
+    "postcss-bem": "^0.4.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-discard-comments": "^2.0.4",
     "postcss-import": "^8.0.2",
-    "precss": "^1.4.0"
+    "precss": "^1.4.0",
+    "rucksack-css": "^0.8.6"
   }
 }
