@@ -22,19 +22,19 @@ gulp.task('css', function () {
     precss,
     lost,
     cssmqpacker,
-	bem({
-		separators: {
-			namespace: '-',
-			descendent: '__',
-			modifier: '--'
-		}
-	})
+    bem({
+      separators: {
+        namespace: '-',
+        descendent: '__',
+        modifier: '--'
+      }
+    })
   ];
   return gulp
     .src('postcss/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processor))
-	.pipe(rucksack())
+    .pipe(rucksack())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('css'));
 });
